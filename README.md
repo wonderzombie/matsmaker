@@ -21,10 +21,12 @@ Modify `+recipes+` and `+mats+` to add recipes and mats.
 
 ### Bugs
 
-`+recipes+` and `+mats+` are globals and they probably shouldn't be.
-`+recipes+` and `+mats+` could be in the same map, perhaps with a type annotation.
-
 There aren't any tests. Huge bug there.
+
+`+recipes+` and `+mats+` are globals. Even though they are immutable they should probably be passed as an environment, or some kind of dynamic var or some such.
+`+recipes+` and `+mats+` could be in the same map, perhaps with a type annotation, instead of segregating them.
+
+Could probably do some stronger validation of recipes/mat relationships.
 
 I'm sure there are more.
 
